@@ -1,0 +1,155 @@
+/* Estilo para el contenedor principal */
+.container {
+    width: 80%; /* Establece el ancho al 80% del ancho de la ventana */
+    margin: 0 auto; /* Centra el contenedor horizontalmente */
+    padding: 20px; /* Agrega relleno */
+    background-color: #f2f2f2; /* Color de fondo */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Sombra */
+}
+
+/* Estilo para el encabezado (título) */
+.header {
+    text-align: center; /* Centra el texto en el encabezado */
+}
+
+/* Estilo para el avatar (imagen de perfil) */
+.avatar {
+    text-align: center; /* Centra la imagen */
+    margin-bottom: 20px; /* Agrega un margen inferior */
+}
+
+.avatar img {
+    width: 150px; /* Ajusta el tamaño de la imagen según tus preferencias */
+    border-radius: 50%; /* Esto redondeará la imagen en forma de avatar */
+}
+
+/* Estilo para la sección de información personal */
+.personal-info {
+    display: flex; /* Muestra los elementos en una fila */
+    justify-content: space-between; /* Espacia uniformemente los elementos */
+    margin-top: 20px; /* Agrega un margen superior */
+}
+
+/* Estilo para los cuadros de información personal (nombre, edad, estudiante) */
+.personal-info div {
+    width: 30%; /* Establece el ancho al 30% del contenedor principal */
+    padding: 10px; /* Agrega relleno */
+    background-color: #aae7df; /* Color de fondo */
+    border: 1px solid #ddd; /* Borde con sombra */
+    border-radius: 5px; /* Bordes redondeados */
+}
+
+/* Estilo para la sección "Sobre Mí" */
+.about-me {
+    margin-top: 20px; /* Agrega un margen superior */
+}
+
+/* Estilo para la sección de habilidades */
+.skills {
+    margin-top: 20px; /* Agrega un margen superior */
+}
+
+.skills ul {
+    list-style-type: none; /* Elimina los puntos de lista */
+    padding: 0; /* Elimina el relleno predeterminado de la lista */
+}
+
+.skills li {
+    margin-bottom: 10px; /* Agrega un margen inferior entre elementos de la lista */
+}
+
+/* Estilo para las barras de progreso */
+.progress-bar {
+    width: 100%; /* Ancho completo */
+    background-color: #ddd; /* Color de fondo de la barra */
+    border-radius: 5px; /* Bordes redondeados */
+    height: 20px; /* Altura de la barra */
+    margin-top: 10px; /* Margen superior */
+}
+/* Aumentar el tamaño de las letras para los encabezados */
+h1 {
+    font-size: 28px; /* Tamaño de letra para h1 */
+}
+
+h2 {
+    font-size: 24px; /* Tamaño de letra para h2 */
+}
+
+/* Aumentar el tamaño de las letras para los párrafos */
+p {
+    font-size: 18px; /* Tamaño de letra para párrafos */
+}
+
+.progress {
+    height: 100%; /* Altura completa de la barra de progreso */
+    border-radius: 5px; /* Bordes redondeados */
+    background-color: #4CAF50; /* Color de fondo de la barra de progreso */
+    text-align: center; /* Centra el texto dentro de la barra de progreso */
+    line-height: 20px; /* Centra verticalmente el texto */
+    color: #fff; /* Color del texto */
+}
+
+/* Estilo para los cuadros flotantes */
+.floating-box {
+    width: 30%; /* Ancho del cuadro flotante */
+    padding: 10px; /* Agrega relleno */
+    background-color: #fff; /* Color de fondo del cuadro */
+    border: 1px solid #ddd; /* Borde con sombra */
+    border-radius: 5px; /* Bordes redondeados */
+    margin-top: 20px; /* Margen superior */
+    float: left; /* Hace que los cuadros floten a la izquierda */
+    clear: both; /* Borra los flotadores */
+}
+
+/* Estilos para el icono de Facebook flotante */
+.facebook-float {
+    position: fixed; /* Fija la posición del icono */
+    bottom: 80px; /* Ajusta la posición vertical según tus preferencias */
+    right: 20px; /* Ajusta la posición horizontal según tus preferencias */
+    z-index: 1000; /* Capa z-index para estar por encima de otros elementos */
+    background-color: #1877f2; /* Color de fondo de Facebook */
+    color: #fff; /* Color del icono y texto */
+    padding: 10px; /* Agrega relleno al icono */
+    border-radius: 50%; /* Bordes redondeados para el icono */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Sombra para el icono */
+    animation: bounce 1s infinite alternate; /* Agregar la animación de rebote */
+    transform-origin: bottom center; /* Establecer el origen de la transformación */
+}
+
+.facebook-float img {
+    width: 30px; /* Tamaño del icono de Facebook */
+    height: 30px;
+    display: block; /* Hace que el icono sea un elemento de bloque */
+}
+
+/* Animación de rebote */
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+/* Estilos para el icono de WhatsApp flotante */
+.whatsapp-float {
+    position: fixed; /* Fija la posición del icono */
+    bottom: 20px; /* Ajusta la posición vertical según tus preferencias */
+    right: 20px; /* Ajusta la posición horizontal según tus preferencias */
+    z-index: 1000; /* Capa z-index para estar por encima de otros elementos */
+    background-color: #25d366; /* Color de fondo de WhatsApp */
+    color: #fff; /* Color del icono y texto */
+    padding: 10px; /* Agrega relleno al icono */
+    border-radius: 50%; /* Bordes redondeados para el icono */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Sombra para el icono */
+    animation: bounce 1s infinite alternate; /* Agregar la animación de rebote */
+    transform-origin: bottom center; /* Establecer el origen de la transformación */
+}
+
+.whatsapp-float img {
+    width: 30px; /* Tamaño del icono de WhatsApp */
+    height: 30px;
+    display: block; /* Hace que el icono sea un elemento de bloque */
+}
