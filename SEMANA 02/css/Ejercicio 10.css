@@ -1,0 +1,28 @@
+h1 {
+    color: #ef476f;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 2px #ced4da;
+    letter-spacing: 3px;
+    word-spacing: 10px;
+    text-decoration: overline underline;
+}
+
+.caja {
+    padding: 15px;
+    margin: auto;
+    width: 70%;
+    background-color: #219ebc;
+    border-radius: 5px;
+    color: white;
+    text-shadow: 1px 1px 2px #ced4da;
+}
+
+.texto {
+    text-align: justify;
+    /*direction: rtl;*/
+    text-indent: 30px;
+    line-height: 1.5;
+    white-space: normal;
+    text-shadow: 1px 1px 2px #ced4da;    
+}

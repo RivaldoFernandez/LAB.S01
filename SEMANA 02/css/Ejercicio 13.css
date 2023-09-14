@@ -1,0 +1,28 @@
+h1, div, p {
+    border: 3px solid blueviolet;
+    padding: 10px;
+    text-align: center;
+    color: cornflowerblue;
+    display: none;
+}
+
+h1 {
+    display: block; /* Establece el valor de display para h1 */
+}
+
+p {
+    visibility: hidden; /* Cambia el valor de visibility para p */
+}
+
+span {
+    display: inline;
+    border: 1px solid blue;
+}
+
+a {
+    display: block;
+}
+
+li {
+    display: inline; /* Agrega un selector y corrige la sintaxis */
+}
