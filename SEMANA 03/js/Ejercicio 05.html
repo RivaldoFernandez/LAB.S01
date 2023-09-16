@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Casa de Cambio</title>
+    <link rel="stylesheet" href="Ejercicio 05.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Casa de Cambio</h1>
+
+    <h2>Seleccionar moneda a enviar:</h2>
+    <label>
+        <input type="radio" name="moneda" value="dolar"> Dólar
+    </label>
+    <label>
+        <input type="radio" name="moneda" value="euro"> Euro
+    </label>
+
+    <h2>Ingrese monto: </h2>
+    <input type="number" id="montoSoles" placeholder="Monto en soles">
+    <button onclick="calcularCotizacion()">Cotizar</button>
+
+    <div id="resultado" style="display: none;">
+        <h2>Resultado</h2>
+        <p id="resultadoTexto"></p>
+    </div>
+</div>
+
+<script>
+    function calcularCotizacion() {
+        var montoSoles = parseFloat(document.getElementById("montoSoles").value);
+        var cotizacionDolar = 3.70;
+        var cotizacionEuro = 3.94;
+        
+        var monedaElegida = document.querySelector('input[name="moneda"]:checked');
+
+        if (monedaElegida) {
+            var monedaValue = monedaElegida.value;
+
+            if (monedaValue === "dolar") {
+                var resultado = montoSoles / cotizacionDolar;
+                document.getElementById("resultadoTexto").textContent = "Recibirás aproximadamente $" + resultado.toFixed(2) + " dólares.";
+            } else if (monedaValue === "euro") {
+                var resultado = montoSoles / cotizacionEuro;
+                document.getElementById("resultadoTexto").textContent = "Recibirás aproximadamente €" + resultado.toFixed(2) + " euros.";
+            }
+
+            document.getElementById("resultado").style.display = "block";
+        } else {
+            alert("Por favor, selecciona la moneda a enviar.");
+        }
+    }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <script>
+        function mayorNum() {
+            var num1 = parseInt(document.getElementById("num1").value); // Corregido el nombre del atributo "value"
+            var num2 = parseInt(document.getElementById("num2").value); // Corregido el nombre del atributo "value"
+            if (!isNaN(num1) && !isNaN(num2)) { // Verificamos si los valores son números
+                if (num1 === num2) {
+                    alert("Los números son iguales");
+                } else if (num1 > num2) {
+                    alert("El número 1 es mayor");
+                } else {
+                    alert("El número 2 es mayor");
+                }
+            } else {
+                alert("Uno de los números no se llenó o no es válido");
+            }
+        }
+    </script>
+</head>
+<body>
+    <form>
+        <input type="text" id="num1" /> <!-- Corregido el ID -->
+        <input type="text" id="num2" /> <!-- Corregido el ID -->
+        <button type="button" onclick="mayorNum()">¿Quién es el mayor?</button>
+    </form>
+</body>
+</html>
